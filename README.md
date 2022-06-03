@@ -17,6 +17,7 @@ A duração desse botcamp foi de 2 meses, começando no dia 01/06 e sendo finali
 Confira a Seguir uma lista com os projetos que eu desenvolvi durante esse Bootcamp
 	
 1. Esse próprio Repositório
+2. [Meu Site Pessoal](Meu-site-pessoal)
 
 ## Anotações de Estudo 
 Essas foram as anotações de estudos dos cursos que fiz durante o bootcamp:

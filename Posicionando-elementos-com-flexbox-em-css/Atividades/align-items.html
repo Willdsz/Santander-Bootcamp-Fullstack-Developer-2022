@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align-items</title>
+
+    <style>
+        /* O align-itens é um atributo responsável por alinhas os itens de acordo com o eixo do conteiner.
+        
+        Veja abaixo alguns valores que podem ser atribuidos a propriedade align-items: 
+        
+        - center: alinhamento dos itens ao centro
+        - stretch: padrão, e os flex itens crescem igualmente
+        - flex-start: alinhamento dos itens no início
+        - flex-end: alinhamento dos itens no final
+        - baseline: alinhamento de acordo com a linha base da tipografia dos itens */
+
+        .container{
+            display: flex;
+            max-width: 350px;
+            border: 1px solid black;
+        }
+
+        .items{
+            margin: 5px;
+            background-color: blueviolet;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .flex-start{
+            align-items: flex-start;
+        }
+
+        .flex-end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .flex{
+            flex: 1;
+        }
+
+        .central{
+            height: 300px;
+            justify-content: center;
+        }
+
+        .central .items{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex-direction: Row</h1>
+
+    <h2>Center</h2>
+    <sec class="container center">
+        <div class="items">Item 1.</div>
+        <div class="items">Lorem ipsum dolor sit amet.</div>
+        <div class="items">Item 3 mais algum texto bem aqui.</div>
+    </sec>
+
+    <h2>Strech</h2>
+    <sec class="container stretch">
+        <div class="items">Item 1.</div>
+        <div class="items">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, soluta?</div>
+        <div class="items">Item 3 mais algum texto bem aqui.</div>
+    </sec>
+
+    <h2>Flex-Start</h2>
+    <sec class="container flex-start">
+        <div class="items">Item 1.</div>
+        <div class="items">Lorem ipsum dolor sit.</div>
+        <div class="items">Item 3 mais algum texto bem aqui.</div>
+    </sec>
+
+    <h2>Flex-end</h2>
+    <sec class="container flex-end">
+        <div class="items">Item 1.</div>
+        <div class="items">Lorem ipsum dolor sit.</div>
+        <div class="items">Item 3 mais algum texto bem aqui.</div>
+    </sec>
+
+    <h2>Baseline</h2>
+    <sec class="container baseline">
+        <div class="items"><br>Item 1.</div>
+        <div class="items">Lorem ipsum dolor sit.</div>
+        <div class="items">Item 3 mais algum texto bem aqui.</div>
+    </sec>
+
+    <h1>Flex-direction: Column</h1>
+
+    <h2>Center</h2>
+    <sec class="container center column">
+        <div class="items">Item 1.</div>
+        <div class="items">Lorem ipsum dolor sit amet.</div>
+        <div class="items">Item 3 mais algum texto bem aqui.</div>
+    </sec>
+
+    <h2>Strech</h2>
+    <sec class="container stretch column">
+        <div class="items">Item 1.</div>
+        <div class="items">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, soluta?</div>
+        <div class="items">Item 3 mais algum texto bem aqui.</div>
+    </sec>
+
+    <h2>Flex-Start</h2>
+    <sec class="container flex-start column">
+        <div class="items">Item 1.</div>
+        <div class="items">Lorem ipsum dolor sit.</div>
+        <div class="items">Item 3 mais algum texto bem aqui.</div>
+    </sec>
+
+    <h2>Flex-end</h2>
+    <sec class="container flex-end column">
+        <div class="items">Item 1.</div>
+        <div class="items">Lorem ipsum dolor sit.</div>
+        <div class="items">Item 3 mais algum texto bem aqui.</div>
+    </sec>
+
+    <h2>Baseline</h2>
+    <sec class="container baseline column">
+        <div class="items"><br>Item 1.</div>
+        <div class="items">Lorem ipsum dolor sit.</div>
+        <div class="items">Item 3 mais algum texto bem aqui.</div>
+    </sec>
+
+    <h2>Alinhamento central à tela</h2>
+    <sec class="container central center">
+        <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, amet.</div>
+    </sec>
+</body>
+</html>

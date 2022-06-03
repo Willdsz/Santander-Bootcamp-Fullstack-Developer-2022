@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Justify-content</title>
+
+    <Style>
+    /* O justify-content é um atributo responsável por tratar do alinhamento e espaçamento dos itens dentro de um container. 
+    
+    Os principais valores que podem ser atribuidos a propriedade justify-content são:
+    
+    - flex-start: Alinha c início do container
+
+    - flex-end: Alinha c/ final do container
+    
+    - center: Alinha ao centro do container
+
+    - space-between: Alinha cria um espaçamento igual entre os elementos
+
+    - space-around: Os espaçamentos do meio são duas vezes maiores que o inicial e o final
+
+    Obs.: Há outros valores que podem ser utilizados na propriedade justify-content. Procure saber mais sobre.
+    */
+
+    .container{
+        display: flex;
+        max-width: 400px;
+        border: 1px solid black;
+    }
+
+    .item{
+        background-color: blueviolet;
+        margin: 5px;
+        text-align: center;
+        color: white;
+    }
+
+    .column{
+        flex-direction: column;
+        min-height: 200px;
+    }
+
+    .flex-start{
+        justify-content: flex-start;
+    }
+
+    .flex-end{
+        justify-content: flex-end;
+    }
+
+    .center{
+        justify-content: center;
+    }
+
+    .space-between{
+        justify-content: space-between;
+    }
+
+    .space-around{
+        justify-content: space-around;
+    }
+    </Style>
+</head>
+
+<body>
+    <h1>Justify-Content c/ flex-direction row</h1>
+
+    <h2>Justify-content: flex-Start</h2>
+    <section class="container flex-start">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3?</div>
+    </section>
+
+    <h2>Justify-content: flex-End</h2>
+    <section class="container flex-end">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </section>
+
+    <h2>Justify-content: Center</h2>
+    <section class="container center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </section>
+
+    <h2>Justify-content: Space-Between</h2>
+    <section class="container space-between">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </section>
+
+    <h2>Justify-content: Space-Around</h2>
+    <section class="container space-around">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </section>
+
+    <h1>Justify-Content c/ flex-direction column</h1>
+
+    <h2>Justify-content: flex-Start</h2>
+    <section class="container flex-start column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3?</div>
+    </section>
+
+    <h2>Justify-content: flex-End</h2>
+    <section class="container flex-end column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3?</div>
+    </section>
+
+    <h2>Justify-content: Center</h2>
+    <section class="container center column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3?</div>
+    </section>
+
+    <h2>Justify-content: Space-Between</h2>
+    <section class="container space-between column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3?</div>
+    </section>
+
+    <h2>Justify-content: Space-Around</h2>
+    <section class="container space-around column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3?</div>
+    </section>
+</body>
+</html>

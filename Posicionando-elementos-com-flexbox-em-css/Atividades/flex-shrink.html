@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fudamentos - Flex-shrink</title>
+
+    <style>
+        /* Essa propriedade estabeçece a capacidade de redução ou compressão do tamanho de um item */
+
+        .flex-container{
+            display: flex;
+            max-width: 350px;
+            border: 2px solid black;
+        }
+
+        .item{
+            background-color: orangered;
+            color: white;
+            text-align: center;
+            margin: 5px;
+            font-size: 24px;
+        }
+        
+        .s-1{
+            flex-shrink: 1;
+        }
+
+        .s-0{
+            flex-shrink: 0;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <p>Flex-shrink: 1</p>
+    <div class="flex-container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">E</div>
+    </div>
+
+    <p>Flex-shrink: 1</p>
+    <div class="flex-container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">Lorem ipsum </div>
+        <div class="item s-1 fg-1">D</div>
+    </div>
+
+    <p>Flex-shrink: 0</p>
+    <div class="flex-container">
+        <div class="item s-0 fg-1">A</div>
+        <div class="item s-0 fg-1">B</div>
+        <div class="item s-0 fg-1">Lorem ipsum </div>
+        <div class="item s-0 fg-1">D</div>
+        <div class="item s-0 fg-1">D</div>
+        <div class="item s-0 fg-1">D</div>
+        <div class="item s-0 fg-1">D</div>
+        <div class="item s-0 fg-1">D</div>
+        <div class="item s-0 fg-1">D</div>
+        <div class="item s-0 fg-1">D</div>
+    </div>
+</body>
+</html>

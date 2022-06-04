@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align self</title>
+
+    <style>
+        /* Essa é a propriedade que estabelece o alinhamento de modo individual sobre um determinado item.
+        Valores possíveis:
+        
+        - auto (Parão): irá respeitar a definição de align-itens do container
+        - flex-start: ao início do container
+        - flex-end: ao final do container
+        - center: relativo ao centro de acordo com o eixo
+        - stretch: ocupa todo o espaço relativo
+        - baseline: utiliza a linha base da tipografia
+        */
+
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            margin-bottom: 20px;
+            max-width: 350px;
+        }
+        
+        .item{
+            background-color: orangered;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+        
+        .align-container{
+            align-items: center;
+        }    
+        .auto{
+            align-self: auto;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+       .stretch{
+            align-self: stretch;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>align-self: auto</h1>
+    <div class="flex-container align-container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+        <div class="item auto">Item 4</div>
+    </div>
+
+    
+    <h1>align-self: mix</h1>
+    <div class="flex-container">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item stretch">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+        <div class="item end">Item 4</div>
+    </div>
+</body>
+</html>

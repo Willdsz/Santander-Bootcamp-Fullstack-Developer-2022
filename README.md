@@ -18,6 +18,8 @@ Confira a Seguir uma lista com os projetos que eu desenvolvi durante esse Bootca
 	
 1. Esse próprio Repositório
 2. [Meu Site Pessoal](Meu-site-pessoal)
+3. [Projeto Flexbox Dio](/Posicionando-elementos-com-flexbox-em-css/project-flexbox-dio/flex-projeto
+)
 
 ## Anotações de Estudo 
 Essas foram as anotações de estudos dos cursos que fiz durante o bootcamp:

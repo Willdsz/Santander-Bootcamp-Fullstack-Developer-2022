@@ -54,7 +54,7 @@ body{
     margin: 10px 0;
     padding: 1.3rem 0;
     border: 1px solid #d3d3d3;
-    width: 100%;
+    min-width: 350px;
 }
 
 .group:nth-child(1){
@@ -123,10 +123,12 @@ body{
     background-size: cover;
 }
 
-.app-download:nth-child(1){
-    background-image: url(./imagens/apple-button.png);
+.app-download:nth-child(1) {
+    background-image: url('./imagens/googleplay-button.png');
 }
 
-.app-download:nth-child(2){
-    background-image: url(./imagens/googleplay-button.png);
+.app-download:nth-child(2) {
+    background-image: url('./imagens/apple-button.png');
 }
+
+

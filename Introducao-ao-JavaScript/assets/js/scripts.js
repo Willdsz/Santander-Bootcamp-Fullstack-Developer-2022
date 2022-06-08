@@ -1,15 +1,16 @@
 let count = 0
 
 const CURRENT_NUMBER = document.getElementById('currentNumber');
+const BUTTON_PLUS = document.getElementById('button_plus');
+const BUTTON_LESS = document.getElementById('button_less');
 
-const BTN = document.getElementsByClassName('button');
 
 function increment() {
     count++;
     CURRENT_NUMBER.innerHTML = count;
 
     change_color()
-    disable_btn()
+    disable_button()
 }
 
 function decrement() {
@@ -17,7 +18,7 @@ function decrement() {
     CURRENT_NUMBER.innerHTML = count;
 
     change_color()
-    disable_btn()
+    disable_button()
 }
 
 function change_color() {
@@ -25,5 +26,18 @@ function change_color() {
         CURRENT_NUMBER.style.color = 'red'
     } else {
         CURRENT_NUMBER.style.color = 'black'
+    }
+}
+
+function disable_button(){
+
+
+    if (count <= -10) {
+        BUTTON_LESS.disabled = true
+    } else if (count >= 10) {
+        BUTTON_PLUS.disabled = true
+    } else {
+        BUTTON_LESS.disabled = false
+        BUTTON_PLUS.disabled = false
     }
 }

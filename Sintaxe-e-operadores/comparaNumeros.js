@@ -42,14 +42,14 @@ function outputConsole(num1, num2) {
         console.log(num1, 'e', num2, 'são diferentes.')
     }
 
-    console.log('Sua soma é', soma)
+    console.log('A soma entre', num1,'e',num2,'é: ',soma,)
 
     if (x === true && y === true) {
-        console.log(soma, 'é maior que 10 e menor que 20')
+        console.log(soma, 'é maior que 10 e menor que 20.')
     } else if (x === true && y === false){
-        console.log(soma, 'é maior que 10 e maior que 20')
+        console.log(soma, 'é maior que 10 e maior que 20.')
     } else if (x === false && y === true){
-        console.log(soma, 'é menor que 10 e menor que 20')
+        console.log(soma, 'é menor que 10 e menor que 20.')
     }
 }
 

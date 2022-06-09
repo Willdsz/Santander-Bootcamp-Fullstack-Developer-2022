@@ -2,26 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-do List</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>To-do list</title>
 </head>
 <body>
-    <div class="todo-lista">
-        <h1>To-do List</h1>
-        <div class="formulario">
-            <input type="" name="" id="">
-            <button>Adicionar</button>
-        </div>
-        <div class="lista">
-            <ul class="itens">
-                <li class="item-lista"></li>
-                <li class="item-lista"></li>
-                <li class="item-lista"></li>
-            </ul>
-        </div>
+    <h1>To-do list</h1>
+    <div id="list">
+        <form id="task-form">
+            <input id="task-input" name="tarefa" type="text" placeholder="Digite aqui sua tarefa" />
+            <button type="submit">Adicionar</button>
+        </form>
+        <div id="tasks"></div>
     </div>
-    <script src="./assets/js/scripts.js" ></script>
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>

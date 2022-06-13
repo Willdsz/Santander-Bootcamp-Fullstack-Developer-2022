@@ -17,9 +17,11 @@ A duração desse botcamp foi de 2 meses, começando no dia 01/06 e sendo finali
 Confira a Seguir uma lista com os projetos que eu desenvolvi durante esse Bootcamp
 	
 1. Esse próprio Repositório
-2. [Meu Site Pessoal](Meu-site-pessoal)
-3. [Projeto Flexbox Dio](/Posicionando-elementos-com-flexbox-em-css/project-flexbox-dio/flex-projeto)
-4. [Recriando Pagina Inicial do Instagram](/Recriando-a-pagina-inicial-do-instagram/)
+2. [Recriando Pagina Inicial do Instagram](/Recriando-a-pagina-inicial-do-instagram/)
+
+## Atividades
+1. [Meu Site Pessoal](Meu-site-pessoal)
+2. [Projeto Flexbox Dio](/Posicionando-elementos-com-flexbox-em-css/project-flexbox-dio/flex-projeto)
 
 ## Anotações de Estudo 
 Essas foram as anotações de estudos dos cursos que fiz durante o bootcamp:

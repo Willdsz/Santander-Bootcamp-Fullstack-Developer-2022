@@ -13,6 +13,6 @@ export class StarComponent implements OnChanges {
     starWidht!:number;
 
     ngOnChanges(): void {
-        this.starWidht = this.rating * 74/5
+        this.starWidht = this.rating * 94/5;
     }
 }

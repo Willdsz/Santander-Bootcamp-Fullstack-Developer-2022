@@ -16,7 +16,7 @@ A duração desse botcamp foi de 2 meses, começando no dia 01/06 e sendo finali
 
 	
 ## Projetos Desenvolvidos no Bootcamp
-Confira a Seguir uma lista com os projetos que eu desenvolvi durante esse Bootcamp
+Confira a Seguir uma lista com os projetos que eu desenvolvi durante esse Bootcamp:
 	
 1. Esse próprio Repositório como o meu 1º Repositório
 2. [Recriando Pagina Inicial do Instagram](/Recriando-a-pagina-inicial-do-instagram/)

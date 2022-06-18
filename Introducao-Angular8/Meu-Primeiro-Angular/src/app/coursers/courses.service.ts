@@ -30,6 +30,10 @@ private coursesUrl: string = 'http://localhost:3100/api/courses'
             }
         }
     }
+
+    deleteById(id: number): Observable<any> {
+        return this.httpClient.delete<any>(`${this.coursesUrl}/${id}`);
+    }
 }
 
 var COURSES: Course[] = [

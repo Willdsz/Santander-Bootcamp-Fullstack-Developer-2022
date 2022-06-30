@@ -15,9 +15,7 @@ A duração desse botcamp foi de 2 meses, começando no dia 01/06 e sendo finali
 - Spring Boot
 
 	
-## Projetos Desenvolvidos no Bootcamp
-Confira a Seguir uma lista com os projetos que eu desenvolvi durante esse Bootcamp:
-	
+## Projetos Desenvolvidos no Bootcamp	
 1. Esse próprio Repositório como o meu 1º Repositório
 2. [Recriando Pagina Inicial do Instagram](/Recriando-a-pagina-inicial-do-instagram/)
 
@@ -26,7 +24,6 @@ Confira a Seguir uma lista com os projetos que eu desenvolvi durante esse Bootca
 2. [Projeto Flexbox Dio](/Posicionando-elementos-com-flexbox-em-css/project-flexbox-dio/flex-projeto)
 
 ## Anotações de Estudo 
-Essas foram as anotações de estudos dos cursos que fiz durante o bootcamp:
 - [Introdução à Programação e Pensamento Computacional](https://docs.google.com/document/d/1Q18BccigwA8RCI_TUh3_IeHIC4zQFE13oQ4wb7vtLLI/edit?usp=sharing)
 - [Introdução ao Git e ao GitHub](https://docs.google.com/document/d/1YmqKlbJJgVNF6e8lXOYYsaVGelLvw-Xe8gSQ68zHusY/edit)
 - [Introdução a criação de websites com HTML5 e CSS3](https://docs.google.com/document/d/1tkrm6nWSPAP2aWc85TPp7JTfsZWXrkExG6oqU0yWzaA/edit?usp=sharing)

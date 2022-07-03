@@ -19,6 +19,7 @@ export class UserService {
   constructor(private httpClient: HttpClient) { }
 
   // C.R.U.D (Create Read Update and Delete)
+
   // Retorna a listra de usuarios (READ)
   getUsers():Observable<User[]> {
     return this.httpClient.get<User[]>(this.apiUrl)
@@ -27,6 +28,11 @@ export class UserService {
   // Salva usuário no BD (Create)
   postUser(user: User):Observable<User> {
     return this.httpClient.post<User>(this.apiUrl, user, this.httpOptions)
+  }
+
+  // Exclui o Usuário do BD (Delete)
+   deleteUser(id: number):Observable<User>{
+    return this.httpClient.delete<User>(`${this.apiUrl}/id/${id}`)
   }
 }
 
